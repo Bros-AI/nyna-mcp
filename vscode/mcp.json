@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "nyna": {
+      "type": "http",
+      "url": "https://nyna.ai/mcp"
+    }
+  }
+}

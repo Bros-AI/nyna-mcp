@@ -1,0 +1,24 @@
+{
+  "name": "nyna-mcp",
+  "description": "Nyna, the AI wedding planner, as a Claude Code plugin: real vendors, guest list, budget and wedding-day run sheet over MCP.",
+  "version": "1.0.0",
+  "owner": {
+    "name": "Nyna AI",
+    "email": "contact@nyna.ai",
+    "url": "https://nyna.ai"
+  },
+  "plugins": [
+    {
+      "name": "nyna",
+      "source": "./plugins/nyna",
+      "description": "Plan a wedding with Nyna from Claude Code: /nyna:find-vendors, /nyna:guests, /nyna:day-of, plus every Nyna MCP tool.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "tags": ["wedding", "planning", "mcp", "nyna", "vendors", "guests"],
+      "homepage": "https://nyna.ai/assistants/claude-code",
+      "repository": "https://github.com/Bros-AI/nyna-mcp",
+      "license": "MIT",
+      "keywords": ["wedding", "wedding-planner", "mcp", "remote-mcp", "oauth"]
+    }
+  ]
+}

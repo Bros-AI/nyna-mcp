@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "nyna": {
+      "type": "http",
+      "url": "https://nyna.ai/mcp"
+    }
+  }
+}

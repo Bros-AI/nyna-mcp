@@ -1,0 +1,55 @@
+{
+  "name": "nyna",
+  "version": "1.0.0",
+  "description": "Nyna, the AI wedding planner: real vendors, guest list, budget and the wedding-day run sheet from ChatGPT and Codex over MCP.",
+  "author": {
+    "name": "Nyna AI",
+    "email": "contact@nyna.ai",
+    "url": "https://nyna.ai"
+  },
+  "homepage": "https://nyna.ai/assistants/chatgpt",
+  "repository": "https://github.com/Bros-AI/nyna-mcp",
+  "license": "MIT",
+  "keywords": [
+    "wedding",
+    "wedding-planner",
+    "vendors",
+    "guest-list",
+    "budget",
+    "event-planning",
+    "mcp"
+  ],
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Nyna",
+    "shortDescription": "Plan your wedding with real vendors and your own guest list",
+    "longDescription": "Nyna is an AI wedding planner. Connected to ChatGPT it searches an indexed directory of wedding vendors (venues, caterers, photographers, florists…) with ratings and addresses, reads and updates your guest list, checklist and wedding-day run sheet, and suggests menus and timelines. Chat is free; the directory needs no account; your own wedding appears after one OAuth sign-in. Every tool states its cost and the permission it needs before it runs.",
+    "developerName": "Nyna AI",
+    "category": "Lifestyle",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "websiteURL": "https://nyna.ai",
+    "privacyPolicyURL": "https://nyna.ai/privacy",
+    "termsOfServiceURL": "https://nyna.ai/terms",
+    "defaultPrompt": [
+      "Find me 5 photographers in Lyon for July 2027",
+      "Add Marie and Pierre Dupont to my guest list",
+      "Draft the schedule for my wedding day"
+    ],
+    "brandColor": "#C9A96E",
+    "brandColorDark": "#E8D5B0",
+    "composerIcon": "./assets/icon-512.png",
+    "logo": "./assets/icon-512.png",
+    "logoDark": "./assets/icon-512.png",
+    "screenshots": [
+      "./assets/screenshot-1-home.jpg",
+      "./assets/screenshot-2-providers.jpg",
+      "./assets/screenshot-3-assistants.jpg"
+    ]
+  },
+  "_owner_todo": {
+    "apps": "After the ChatGPT app is created in the OpenAI developer console (Apps SDK), add \"apps\": \"./.app.json\" above and write .app.json as {\"apps\":{\"nyna\":{\"id\":\"asdk_app_…\"}}} with the id the console shows.",
+    "assets": "Copy distribution/assets/icon-512.png and the three screenshots into chatgpt/assets/ before submitting (paths above). A 'composerIcon' SVG or PNG on transparent background is preferred by the directory.",
+    "legal": "privacyPolicyURL and termsOfServiceURL point at the French legal pages; the review team may ask for an English summary — https://nyna.ai/llms-full.txt covers the data handling in English.",
+    "schema": "Field names follow openai/plugins (plugins/<name>/.codex-plugin/plugin.json, e.g. figma and notion); the directory interface block has no published JSON schema yet — re-check against the latest example before submitting."
+  }
+}
